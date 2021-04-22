@@ -1,7 +1,5 @@
 package com.ajax.leetcode.auxiliary;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class ListNode {
@@ -35,14 +33,5 @@ public class ListNode {
     @Override
     public String toString() {
         return "" + val;
-    }
-
-    public List<Integer> toArray() {
-        List<Integer> list = new ArrayList<>();
-        list.add(val);
-        if (next != null) {
-            list.addAll(next.toArray());
-        }
-        return list;
     }
 }
