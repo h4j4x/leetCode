@@ -20,8 +20,7 @@ public class ListNode {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ListNode)) return false;
-        ListNode listNode = (ListNode) o;
+        if (!(o instanceof ListNode listNode)) return false;
         return val == listNode.val && Objects.equals(next, listNode.next);
     }
 
@@ -32,6 +31,6 @@ public class ListNode {
 
     @Override
     public String toString() {
-        return "" + val;
+        return "" + val + ((next != null) ? ", " + next : "");
     }
 }
