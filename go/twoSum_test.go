@@ -6,13 +6,13 @@ import (
 	"testing"
 )
 
-type TestData struct {
+type TwoSumTestData struct {
 	values   []int
 	target   int
 	expected []int
 }
 
-var tests = []TestData{
+var TwoSumTests = []TwoSumTestData{
 	{
 		[]int{2, 7, 11, 15}, 9, []int{0, 1},
 	},
@@ -25,9 +25,9 @@ var tests = []TestData{
 }
 
 func TestTwoSum(t *testing.T) {
-	for _, data := range tests {
+	for _, data := range TwoSumTests {
 		var answer = TwoSum(data.values, data.target)
-		if !equal(answer, data.expected) {
+		if !sliceEqual(answer, data.expected) {
 			t.Error(
 				"For", data.values,
 				"expected", data.expected,
@@ -37,7 +37,7 @@ func TestTwoSum(t *testing.T) {
 	}
 }
 
-func equal(a, b []int) bool {
+func sliceEqual(a, b []int) bool {
 	if len(a) != len(b) {
 		return false
 	}
