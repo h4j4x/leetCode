@@ -1,6 +1,5 @@
-package com.ajax.leetcode;
+package com.ajax.leetcode.geeks4geeks;
 
-import com.ajax.leetcode.geeks4geeks.QuickSort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
