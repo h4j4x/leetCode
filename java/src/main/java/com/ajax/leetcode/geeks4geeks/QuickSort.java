@@ -2,21 +2,21 @@ package com.ajax.leetcode.geeks4geeks;
 
 public class QuickSort {
     public static int[] quicksort(int[] unsorted) {
-        if (unsorted == null) {
-            return null;
+        if (unsorted == null || unsorted.length < 2) {
+            return unsorted;
         }
         int len = unsorted.length;
         int[] sorted = new int[len];
         System.arraycopy(unsorted, 0, sorted, 0, len);
-        quickSort(sorted, 0, len - 1);
+        quicksort(sorted, 0, len - 1);
         return sorted;
     }
 
-    private static void quickSort(int[] arr, int low, int high) {
+    private static void quicksort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
-            quickSort(arr, low, pi - 1);
-            quickSort(arr, pi + 1, high);
+            quicksort(arr, low, pi - 1);
+            quicksort(arr, pi + 1, high);
         }
     }
 
@@ -29,8 +29,8 @@ public class QuickSort {
                 swap(arr, i, j);
             }
         }
-        swap(arr, i + 1, high);
-        return i + 1;
+        swap(arr, ++i, high);
+        return i;
     }
 
     private static void swap(int[] arr, int i, int j) {
