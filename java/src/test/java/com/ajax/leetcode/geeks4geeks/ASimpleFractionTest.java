@@ -13,7 +13,7 @@ public class ASimpleFractionTest {
         Assertions.assertEquals("2.5", value);
 
         value = ASimpleFraction.fractionToDecimal(10, 2);
-        Assertions.assertEquals("5.0", value);
+        Assertions.assertEquals("5", value);
 
         value = ASimpleFraction.fractionToDecimal(4, 9);
         Assertions.assertEquals("0.(4)", value);
