@@ -35,5 +35,11 @@ public class SimpleSequenceTest {
 
         value = SimpleSequence.simpleSequenceValue("9223372036854775807");
         Assertions.assertEquals("4611686018427387905", value);
+
+        value = SimpleSequence.simpleSequenceValue("4611686018327187");
+        Assertions.assertEquals("2305843009163595", value);
+
+        value = SimpleSequence.simpleSequenceValue("81239812739128371");
+        Assertions.assertEquals("40619906369564187", value);
     }
 }
