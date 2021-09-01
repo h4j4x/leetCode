@@ -21,16 +21,14 @@ public class QuickSort {
     }
 
     private static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];
-        int i = (low - 1);
-        for (int j = low; j <= high- 1; j++) {
-            if (arr[j] < pivot) {
-                i++;
-                swap(arr, i, j);
+        int index = low - 1;
+        for (int i = low; i < high; i++) {
+            if (arr[i] < arr[high]) {
+                swap(arr, i, ++index);
             }
         }
-        swap(arr, ++i, high);
-        return i;
+        swap(arr, high, ++index);
+        return index;
     }
 
     private static void swap(int[] arr, int i, int j) {

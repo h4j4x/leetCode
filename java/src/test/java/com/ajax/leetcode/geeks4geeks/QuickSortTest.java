@@ -14,5 +14,14 @@ public class QuickSortTest {
         };
         int[] sorted = QuickSort.quicksort(unsorted);
         Assertions.assertArrayEquals(expected, sorted);
+
+        unsorted = new int[]{
+            4, 5, 1, 2, 2, 3, 0,
+        };
+        expected = new int[]{
+            0, 1, 2, 2, 3, 4, 5,
+        };
+        sorted = QuickSort.quicksort(unsorted);
+        Assertions.assertArrayEquals(expected, sorted);
     }
 }
