@@ -16,6 +16,6 @@ public class MaximumElementMinimumSumTest {
 
         numbers = new int[]{4,-10,6,-3,-2,-4,-9,10,0,-7,-4,-9,-4,2,-6,-7,10,1,8,10,5,1,2,-8,2,-10,0,-6,4,-2,-6,8,-3,0,9,-4,4,-5,4,-8,-1,-3,-8,8,-6,-7,8,6,0,9,2,-3,-4,4,-5,-2,0,3,0,-3,-6,-4,1,-4,-5,3,2,1,4,-8,-8,-3,-6,2,-4,9,-6,-9,0,9,9,-6,3,-4,0,-7,-5,0,6,-6,-10,4,-2,6,-3,-1,4,1,-3,-7};
         max = MaximumElementMinimumSum.maximumElementMinimumSum(numbers);
-        Assertions.assertEquals(10, max);
+        Assertions.assertEquals(9, max);
     }
 }
