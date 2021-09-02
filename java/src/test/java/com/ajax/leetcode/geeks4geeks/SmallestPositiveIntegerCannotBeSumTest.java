@@ -1,5 +1,6 @@
 package com.ajax.leetcode.geeks4geeks;
 
+import com.ajax.leetcode.IOUtils;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,20 +19,7 @@ public class SmallestPositiveIntegerCannotBeSumTest {
         value = SmallestPositiveIntegerCannotBeSum.smallestPositive(new long[] {1, 1, 1}, 3);
         Assertions.assertEquals(4, value);
 
-        InputStream arrayStream = getClass()
-            .getResourceAsStream("/geeks4geeks/smallestPositiveIntegerCannotBeSum.txt");
-        String result;
-        String newLine = System.getProperty("line.separator");
-        assert arrayStream != null;
-        try (Stream<String> lines = new BufferedReader(new InputStreamReader(arrayStream)).lines()) {
-            result = lines.collect(Collectors.joining(newLine));
-        }
-        Long[] list = Arrays.stream(result.split("\\s"))
-            .map(Long::valueOf).toArray(Long[]::new);
-        long[] array = new long[list.length];
-        for (int i = 0; i < list.length; i++) {
-            array[i] = list[i];
-        }
+        long[] array = IOUtils.readFileIntoLongArray("/geeks4geeks/smallestPositiveIntegerCannotBeSum.txt");
         value = SmallestPositiveIntegerCannotBeSum.smallestPositive(array, 3);
         Assertions.assertEquals(250171817859L, value);
     }
