@@ -12,28 +12,28 @@ public class QuickSort {
         return sorted;
     }
 
-    private static void quicksort(int[] arr, int low, int high) {
+    private static void quicksort(int[] array, int low, int high) {
         if (low < high) {
-            int pi = partition(arr, low, high);
-            quicksort(arr, low, pi - 1);
-            quicksort(arr, pi + 1, high);
+            int pivot = partition(array, low, high);
+            quicksort(array, low, pivot - 1);
+            quicksort(array, pivot + 1, high);
         }
     }
 
-    private static int partition(int[] arr, int low, int high) {
+    private static int partition(int[] array, int low, int high) {
         int index = low - 1;
         for (int i = low; i < high; i++) {
-            if (arr[i] < arr[high]) {
-                swap(arr, i, ++index);
+            if (array[i] < array[high]) {
+                swap(array, ++index, i);
             }
         }
-        swap(arr, high, ++index);
+        swap(array, ++index, high);
         return index;
     }
 
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+    private static void swap(int[] array, int x, int y) {
+        int temp = array[x];
+        array[x] = array[y];
+        array[y] = temp;
     }
 }
