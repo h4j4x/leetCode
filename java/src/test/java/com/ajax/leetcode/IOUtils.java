@@ -1,8 +1,7 @@
 package com.ajax.leetcode;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -39,5 +38,18 @@ public class IOUtils {
             array[i] = list[i];
         }
         return array;
+    }
+
+    public static void saveIntArrayToFile(String path, int[] array) throws IOException {
+        File file = new File(path);
+        if (file.exists()) {
+            file.delete();
+        }
+        file.createNewFile();
+        try (OutputStream stream = new FileOutputStream(file)) {
+            for (int value : array) {
+                stream.write((value + " ").getBytes(StandardCharsets.UTF_8));
+            }
+        }
     }
 }
