@@ -24,10 +24,10 @@ public class QuickSort {
         int pivot = low - 1;
         for (int index = low; index < high; index++) {
             if (array[index] < array[high]) {
-                swap(array, ++pivot, index);
+                swap(array, index, ++pivot);
             }
         }
-        swap(array, ++pivot, high);
+        swap(array, high, ++pivot);
         return pivot;
     }
 
