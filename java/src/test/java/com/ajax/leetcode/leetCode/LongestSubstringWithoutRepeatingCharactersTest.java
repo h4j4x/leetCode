@@ -41,7 +41,7 @@ public class LongestSubstringWithoutRepeatingCharactersTest {
         result = LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(input);
         Assertions.assertEquals(expected, result);
 
-        input = "geeks forágeeks";
+        input = "geeks forageeks";
         expected = 9;
         result = LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(input);
         Assertions.assertEquals(expected, result);

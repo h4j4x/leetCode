@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode;
 
 public class QuickSort {
     public static int[] quicksort(int[] unsorted) {
@@ -24,10 +24,10 @@ public class QuickSort {
         int pivot = low - 1;
         for (int index = low; index < high; index++) {
             if (array[index] < array[high]) {
-                swap(array, index, ++pivot);
+                swap(array, ++pivot, index);
             }
         }
-        swap(array, high, ++pivot);
+        swap(array, ++pivot, high);
         return pivot;
     }
 

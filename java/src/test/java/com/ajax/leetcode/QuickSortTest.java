@@ -1,7 +1,6 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
