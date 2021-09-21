@@ -1,7 +1,6 @@
 package com.ajax.leetcode.geeks4geeks.arrays;
 
 import com.ajax.leetcode.IOUtils;
-import com.ajax.leetcode.geeks4geeks.arrays.SubArrayWithGivenSum;
 import java.util.ArrayList;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

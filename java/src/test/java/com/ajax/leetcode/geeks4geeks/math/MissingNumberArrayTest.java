@@ -1,6 +1,5 @@
 package com.ajax.leetcode.geeks4geeks.math;
 
-import com.ajax.leetcode.geeks4geeks.math.MissingNumberArray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

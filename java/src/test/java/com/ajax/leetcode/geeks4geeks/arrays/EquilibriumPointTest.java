@@ -1,6 +1,5 @@
 package com.ajax.leetcode.geeks4geeks.arrays;
 
-import com.ajax.leetcode.geeks4geeks.arrays.EquilibriumPoint;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

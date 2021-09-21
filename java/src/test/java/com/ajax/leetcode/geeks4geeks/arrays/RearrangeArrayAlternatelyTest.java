@@ -1,6 +1,5 @@
 package com.ajax.leetcode.geeks4geeks.arrays;
 
-import com.ajax.leetcode.geeks4geeks.arrays.RearrangeArrayAlternately;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

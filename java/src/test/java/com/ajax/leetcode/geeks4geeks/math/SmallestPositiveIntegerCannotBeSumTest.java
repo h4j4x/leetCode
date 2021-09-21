@@ -1,7 +1,6 @@
 package com.ajax.leetcode.geeks4geeks.math;
 
 import com.ajax.leetcode.IOUtils;
-import com.ajax.leetcode.geeks4geeks.math.SmallestPositiveIntegerCannotBeSum;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
