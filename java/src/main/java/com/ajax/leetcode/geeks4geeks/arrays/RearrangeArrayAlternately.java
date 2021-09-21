@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.arrays;
 
 public class RearrangeArrayAlternately {
     public static void rearrange(int[] arr, int n) {

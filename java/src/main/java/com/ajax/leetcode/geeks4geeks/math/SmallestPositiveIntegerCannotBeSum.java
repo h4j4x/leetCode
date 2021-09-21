@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.math;
 
 public class SmallestPositiveIntegerCannotBeSum {
     public static long smallestPositive(long[] array, int n){

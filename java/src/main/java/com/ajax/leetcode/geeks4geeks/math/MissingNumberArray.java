@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.math;
 
 public class MissingNumberArray {
     public static int missingNumber(int[] array, int n) {

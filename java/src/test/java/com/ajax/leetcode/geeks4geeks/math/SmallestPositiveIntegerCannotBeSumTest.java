@@ -1,12 +1,7 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.math;
 
 import com.ajax.leetcode.IOUtils;
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import com.ajax.leetcode.geeks4geeks.math.SmallestPositiveIntegerCannotBeSum;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

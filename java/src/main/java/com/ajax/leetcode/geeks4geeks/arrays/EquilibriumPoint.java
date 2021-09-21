@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.arrays;
 
 public class EquilibriumPoint {
     public static int equilibriumPoint(long[] arr, int n) {

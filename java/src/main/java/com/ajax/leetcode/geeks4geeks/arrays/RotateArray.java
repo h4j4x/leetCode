@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.arrays;
 
 public class RotateArray {
     public static void rotateArr(int[] arr, int d, int n) {

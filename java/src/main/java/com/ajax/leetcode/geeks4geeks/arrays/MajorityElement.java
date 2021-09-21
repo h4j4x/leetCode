@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.arrays;
 
 import java.util.HashMap;
 import java.util.Map;

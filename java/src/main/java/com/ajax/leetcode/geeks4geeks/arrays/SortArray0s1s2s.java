@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.arrays;
 
 public class SortArray0s1s2s {
     public static void sort012(int[] array, int n) {

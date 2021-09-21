@@ -1,4 +1,4 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.math;
 
 public class TrailingZeroesFactorial {
     public static int trailingZeroes(int n){

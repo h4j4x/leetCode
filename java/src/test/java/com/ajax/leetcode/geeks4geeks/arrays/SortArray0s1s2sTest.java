@@ -1,6 +1,7 @@
-package com.ajax.leetcode.geeks4geeks;
+package com.ajax.leetcode.geeks4geeks.arrays;
 
 import com.ajax.leetcode.IOUtils;
+import com.ajax.leetcode.geeks4geeks.arrays.SortArray0s1s2s;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
