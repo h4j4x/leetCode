@@ -1,4 +1,4 @@
-package com.ajax.leetcode;
+package com.ajax.leetcode.other;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.ajax.leetcode;
+package com.ajax.leetcode.other;
 
 public class QuickSort {
     public static int[] quicksort(int[] unsorted) {
